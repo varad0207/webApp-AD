@@ -179,3 +179,7 @@ def dataVis():
         return render_template("visualize_data.html", plot=plot)
     else:
         return render_template("visualize_data.html", error="Some error occured")
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
