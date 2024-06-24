@@ -90,7 +90,6 @@ def ip_choide():
 @app.route("/input_form", methods=["GET", "POST"])
 def ip_form():
     choice = request.form["button_clicked"]
-    # print('button clicked', choice)
     if choice == 'uni':
         return render_template("input_form.html", algos=ALGO_UNI, loading=False, choice='uni')
     elif choice == 'multi':
@@ -104,13 +103,7 @@ def visual():
 
 @app.route("/input_vis", methods=["GET", "POST"])
 def ip_vis():
-    return render_template("input_vis.html")
-
-
-# @app.route("/visualizedata", methods=["GET", "POST"])
-# def datavis():
-#     return render_template("visualize_data.html")
-    
+    return render_template("input_vis.html")    
 
 def train_model(dataset, selected_algo, plots, model):
     plot_model = Gen_Plot()
