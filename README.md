@@ -22,7 +22,7 @@ Run the following commands in your terminal
 
 1. Clone the repository 
 ```
-git clone <link-of-the-repository>
+git clone https://github.com/varad0207/webApp-AD.git
 ```
 
 2. Create a virtual environment in the root directory of the project
