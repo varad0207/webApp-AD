@@ -7,5 +7,3 @@ flask_session
 todos.txt
 backup.txt
 req.txt
-wsgi.py
-index.py
